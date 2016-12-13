@@ -20,6 +20,17 @@ the proprietary KDE algorithm with public algorithms from sklearn.  I
 looked at neural networks, SVM, random forests, bagging, and boosting.
 While bagging has the highest efficiency, it also takes considerably
 longer than random forests, which provided the best overall solution
-(in terms of completeness, efficiency and computing time).
+(in terms of completeness, efficiency and computing time).  The
+results of this get applied to the test set in
+`SpIESHighzQuasars.ipynb`.
 
 `SpIESHighzCandidateSelection2.ipynb`<br> 
+is similar to the notebook above, but here I was exploring what would
+happen if we added i-band magnitude and u-band extinction as
+classification attributes.  I also explored some different
+combinations of selection algorithms.  I found that bagging including
+i and extinctu has less contamin than anything else.
+`SpIESHighzQuasars2.ipynb` is the notebook where I explore these
+changes in selection.
+
+`SpIESHighzQuasars.ipynb`<br>
