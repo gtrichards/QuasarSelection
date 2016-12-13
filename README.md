@@ -54,3 +54,31 @@ the objects in Stripe 82.  However, it does so using RF, SVM, *and*
 bagging.  That way we can compare the results and find out which
 produces the least contamination as that is important for our
 clustering analysis.
+
+`SpIESHighzQuasarsS82all.py`<br>
+See note above.  Outputs `GTR-ADM-QSO-ir_good_test_2016_out_Stripe82all.fits`.
+
+`SpIESHighzQuasarPhotoz.ipynb`<br>
+The above notebooks just do selection, now we need to do photo-$z$ on
+the output files with the quasar canddiates.  Here I play with
+Nadaraya-Watson, Random Forest, Gaussian Process Regression, SVM, and
+Stochastic Gradient Descent.  The first two are good, the next two
+crash, and the last one is terrible.  Just doing self classification
+of the training set here.
+
+`SpIESHighzQuasarPhotoz2.ipynb`<br>
+Now we apply the best photo-z algorithms to the test data,
+specifically quasar candidates.  Right now just sticking to the Stripe
+82 quasar candidates from
+`GTR-ADM-QSO-ir_good_test_2016_out_Stripe82all.fits` as the
+Nadaraya-Watson algorithm isn't particularly speedy.  Output is 
+`GTR-ADM-QSO-ir_good_test_2016_out_Stripe82all_zphot.fits`.
+
+Included quasar candidates file, which includes all of the test
+object, not just the quasar candidates:<br>
+`GTR-ADM-QSO-ir_good_test_2016_out_Stripe82all.fits.bz2`<br>
+Actually, I couldn't because it exceeded the file size limit.  So ask me if you want it!
+
+Included the quasar candidate file limited to quasar candidates only
+with two photo-z outputs:<br>
+`GTR-ADM-QSO-ir_good_test_2016_out_Stripe82all_zphot.fits`
