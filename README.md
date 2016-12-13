@@ -34,3 +34,11 @@ i and extinctu has less contamin than anything else.
 changes in selection.
 
 `SpIESHighzQuasars.ipynb`<br>
+is a notebook that applies the RF classifier from
+`SpIESHighzCandidateSelection.ipynb` to the test set.  This uses
+colors only.  I also explored with bagging, but that crashes and later
+led to trying just to classify Stripe 82 objects with stand-alone
+python code, running on the server.  See `SpIESHighzQuasarsS82all.py`.
+But this notebook *does* successfully produce output classifications
+for the test set using the RF classifier.  The output is in
+`GTR-ADM-QSO-ir_good_test_2016_out.fits`.
