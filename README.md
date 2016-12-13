@@ -42,3 +42,15 @@ python code, running on the server.  See `SpIESHighzQuasarsS82all.py`.
 But this notebook *does* successfully produce output classifications
 for the test set using the RF classifier.  The output is in
 `GTR-ADM-QSO-ir_good_test_2016_out.fits`.
+
+`SpIESHighzQuasars.ipynb`<br>
+is a notebook that applies the SVM and bagging classifiers from
+`SpIESHighzCandidateSelection2.ipynb` to the test set.  I also tried
+to create a new version of the test set that included i-band magnitude
+and u-band extinction, but I ran into all sorts of problems.  (Though
+it may be worth trying again).  In the end, I ended up writing a
+stand-alone script `SpIESHighzQuasarsS82all.py` that just classifies
+the objects in Stripe 82.  However, it does so using RF, SVM, *and*
+bagging.  That way we can compare the results and find out which
+produces the least contamination as that is important for our
+clustering analysis.
