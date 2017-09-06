@@ -82,3 +82,5 @@ Actually, I couldn't because it exceeded the file size limit.  So ask me if you 
 Included the quasar candidate file limited to quasar candidates only
 with two photo-z outputs:<br>
 `GTR-ADM-QSO-ir_good_test_2016_out_Stripe82all_zphot.fits`
+
+This work was supported in part by NSF CDS&E grant 1411773.
